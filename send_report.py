@@ -38,6 +38,7 @@ def main() -> None:
             print(html)
             return
 
+        config.require_smtp()
         send_html_email(
             smtp_host=config.smtp_host,
             smtp_port=config.smtp_port,
